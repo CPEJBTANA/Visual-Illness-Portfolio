@@ -1,0 +1,61 @@
+.Contact {
+  width: 100%;
+  height: 100vh;
+  //outline: 2px solid red;
+  display: flex;
+  flex-direction: column;
+  @media screen and (max-width: 700px) {
+    height: 50vh;
+  }
+}
+
+.ContactHeader {
+  width: 100%;
+  height: 20%;
+  //outline: 2px solid rgb(146, 143, 143);
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 6.5em;
+  font-family: "Odibee Sans", sans-serif;
+  letter-spacing: 10px;
+  @media screen and (max-width: 700px) {
+    display: none;
+    justify-content: start;
+  }
+}
+
+.CardContainer {
+  width: 100%;
+  height: 100%;
+  //outline: 2px solid rgb(146, 143, 143);
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Card {
+  width: 70%;
+  height: 20%;
+  outline: 2px solid rgb(146, 143, 143);
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: ease-in-out 0.2s;
+
+  @media screen and (max-width: 700px) {
+    width: 70%;
+    font-size: 5.75px;
+  }
+}
+
+.Card:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  transform: scale(1.1);
+}
