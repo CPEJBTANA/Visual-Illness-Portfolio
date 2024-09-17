@@ -40,7 +40,7 @@
   //outline: 2px solid green;
   pad: 20px;
   gap: 5%;
-  outline: 2px solid red;
+  // outline: 2px solid red;
 
   @media screen and (max-width: 700px) {
     flex-direction: column;
@@ -64,7 +64,7 @@
     width: 25%;
     height: 100%;
     display: flex;
-    outline: 2px solid black;
+    // outline: 2px solid black;
     transition: width 0.5s ease;
 
     &:hover {
