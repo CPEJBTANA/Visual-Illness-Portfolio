@@ -311,7 +311,7 @@ main {
 @media screen and (max-width: 700px) {
   main {
     width: 100%;
-    padding: 0%;
+    padding: 5%;
   }
 }
 
@@ -392,6 +392,11 @@ header img {
   height: 400px;
   background-image: url(images/banner.png);
   position: relative;
+}
+@media screen and (max-width: 700px) {
+  .banner .image {
+    height: 300px;
+  }
 }
 .banner .image img {
   position: absolute;
@@ -517,7 +522,7 @@ footer .content {
     grid-row: 5;
   }
   .grid-3 {
-    font-size: 5em;
+    font-size: 3em;
     line-height: 1em;
   }
 }
@@ -542,7 +547,9 @@ footer .content {
     font-size: 3em;
   }
   .grid {
-    display: block;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(var(--row), 50px);
+    gap: 0px;
   }
   .grid-3 {
     font-size: 4em;
