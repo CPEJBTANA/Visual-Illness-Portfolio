@@ -203,7 +203,7 @@
 
 .Contact {
   width: 100%;
-  height: 100vh;
+  height: 90vh;
   display: flex;
   flex-direction: column;
 }
@@ -213,34 +213,17 @@
   }
 }
 
-.ContactHeader {
-  width: 100%;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  font-size: 6.5em;
-  font-family: "Odibee Sans", sans-serif;
-  letter-spacing: 10px;
-}
-@media screen and (max-width: 700px) {
-  .ContactHeader {
-    display: none;
-    justify-content: start;
-  }
-}
-
 .CardContainer {
   width: 100%;
   height: 100%;
   margin: auto;
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
 .Card {
+  margin-top: 20px;
   width: 70%;
   height: 25%;
   outline: 2px solid rgb(146, 143, 143);
@@ -302,12 +285,19 @@
   }
 }
 
+.img-container:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: ease-in-out 0.5s;
+}
+
 .ImgPreviews .img-container {
   width: 100%;
   padding-top: 56.25%; /* 16:9 aspect ratio */
   background-color: #ccc; /* Placeholder background color */
   position: relative;
   outline: 2px solid black;
+  transition: ease-in-out 0.5s;
 }
 
 .ImgPreviews .img-container img {
@@ -366,6 +356,7 @@
   position: relative;
   aspect-ratio: 16/9; /* Adjusted aspect ratio to make snapshots bigger */
   overflow: hidden;
+  transition: ease-in-out 0.5s;
 }
 
 .Snapshot img {
@@ -373,6 +364,7 @@
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  transition: ease-in-out 0.5s;
 }
 
 .VideoContainer iframe {
