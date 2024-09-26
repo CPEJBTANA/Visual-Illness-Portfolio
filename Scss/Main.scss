@@ -2,6 +2,8 @@
 @import "./Aboutme";
 @import "./Gallery";
 @import "./contacts";
+@import "./preview";
+@import "../SubPages/Styling/SubPages";
 html,
 body {
   scroll-behavior: smooth;
@@ -9,6 +11,7 @@ body {
 
 body {
   background-color: #cbcbcb;
+
   margin: 0;
   font-size: 14px;
   color: #2e373a;
@@ -30,7 +33,7 @@ main {
 
   @media screen and (max-width: 700px) {
     width: 100%;
-    padding: 5%;
+    padding: 10%;
   }
 }
 nav {
@@ -119,8 +122,10 @@ header {
     height: 400px;
     background-image: url(images/banner.png);
     position: relative;
+    overflow: visible;
     @media screen and (max-width: 700px) {
       height: 300px;
+      width: 100vw;
     }
 
     img {
